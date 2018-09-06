@@ -14,8 +14,9 @@ namespace app\controllers;
  * @author grajdanin
  */
 class MainController extends AppController {
-    
+      
     public function indexAction() {
-        
+        $this->setMeta(\myshop\App::$registry->getProperty('shop_name'), 
+                $desc = 'описание', $keywords = 'ключевые');
     }
 }
